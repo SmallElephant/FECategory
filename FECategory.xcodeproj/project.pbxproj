@@ -15,6 +15,7 @@
 		A880C5481CDA49E1005B012C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A880C5461CDA49E1005B012C /* LaunchScreen.storyboard */; };
 		A880C5531CDA49E1005B012C /* FECategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A880C5521CDA49E1005B012C /* FECategoryTests.m */; };
 		A880C55E1CDA49E1005B012C /* FECategoryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A880C55D1CDA49E1005B012C /* FECategoryUITests.m */; };
+		A880C5711CDA4A72005B012C /* NSDate+FEDateCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = A880C5701CDA4A72005B012C /* NSDate+FEDateCompare.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		A880C5591CDA49E1005B012C /* FECategoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FECategoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A880C55D1CDA49E1005B012C /* FECategoryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FECategoryUITests.m; sourceTree = "<group>"; };
 		A880C55F1CDA49E1005B012C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A880C56F1CDA4A72005B012C /* NSDate+FEDateCompare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+FEDateCompare.h"; sourceTree = "<group>"; };
+		A880C5701CDA4A72005B012C /* NSDate+FEDateCompare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+FEDateCompare.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,7 @@
 				A880C53E1CDA49E1005B012C /* ViewController.h */,
 				A880C53F1CDA49E1005B012C /* ViewController.m */,
 				A880C5411CDA49E1005B012C /* Main.storyboard */,
+				A880C56B1CDA4A1C005B012C /* Category */,
 				A880C5441CDA49E1005B012C /* Assets.xcassets */,
 				A880C5461CDA49E1005B012C /* LaunchScreen.storyboard */,
 				A880C5491CDA49E1005B012C /* Info.plist */,
@@ -138,6 +142,15 @@
 				A880C55F1CDA49E1005B012C /* Info.plist */,
 			);
 			path = FECategoryUITests;
+			sourceTree = "<group>";
+		};
+		A880C56B1CDA4A1C005B012C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A880C56F1CDA4A72005B012C /* NSDate+FEDateCompare.h */,
+				A880C5701CDA4A72005B012C /* NSDate+FEDateCompare.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +286,7 @@
 				A880C5401CDA49E1005B012C /* ViewController.m in Sources */,
 				A880C53D1CDA49E1005B012C /* AppDelegate.m in Sources */,
 				A880C53A1CDA49E1005B012C /* main.m in Sources */,
+				A880C5711CDA4A72005B012C /* NSDate+FEDateCompare.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
