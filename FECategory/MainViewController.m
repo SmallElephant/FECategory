@@ -6,14 +6,18 @@
 //  Copyright © 2016年 FlyElephant. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MainViewController.h"
 #import "NSDate+FEDateCompare.h"
+#import "UITextField+FEPlaceHolder.h"
 
-@interface ViewController ()
+@interface MainViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *leftTextField;
+
+@property (weak, nonatomic) IBOutlet UITextField *rightTextField;
 @end
 
-@implementation ViewController
+@implementation MainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,13 +31,41 @@
 //    [self compareDate2];
 //    [self compareDate3];
 //    [self compareDate4];
-    [self compareDate5];
+//    [self compareDate5];
+//    [self fetchData:nil];
+//    [self setupAssert];
+    
+    self.leftTextField.leftPadding=20.0f;
+    self.leftTextField.placeholder=@"FlyElephant-Left";
+    self.leftTextField.placeHolderColor=[UIColor redColor];
+    
+    self.rightTextField.placeholder=@"FlyElephant-Normal";
+    
+    NSCalendar *cal=[NSCalendar currentCalendar];
+    NSDateComponents *components=[cal components:(NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitEra) fromDate:[NSDate date]];
+    NSLog(@"年:%ld--月:%ld---日:%ld",(long)components.year,(long)components.month,(long)components.day);
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - NS
+
+-(void)setupAssert{
+    NSString *result=@"中山郎";
+    NSInteger  count=10;
+    NSAssert(count>10, @"总数必须大于10");
+    NSLog(@"断言执行之后");
+    
+    NSParameterAssert(nil);
+    NSParameterAssert(![result isEqualToString:@"FlyElephant"]);
+    NSLog(@"Name:%@",result);
+    NSParameterAssert([result isEqualToString:@"FlyElephant"]);
+}
+
+#pragma mark - NSDate
 
 -(void)compareDate{
     //FlyElephant

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FEAssertionHandler.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    FEAssertionHandler *hanlder=[[FEAssertionHandler alloc]init];
+    [[[NSThread currentThread] threadDictionary] setValue:hanlder forKey:NSAssertionHandlerKey];
     return YES;
 }
 
