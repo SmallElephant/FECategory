@@ -26,14 +26,7 @@
     NSLog(@"%f",floor(10-100));
     
     NSLog(@"%@", NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES));
-//    [self compareDate];
-//    [self compareDate1];
-//    [self compareDate2];
-//    [self compareDate3];
-//    [self compareDate4];
-//    [self compareDate5];
-//    [self fetchData:nil];
-//    [self setupAssert];
+
     
     self.leftTextField.leftPadding=20.0f;
     self.leftTextField.placeholder=@"FlyElephant-Left";

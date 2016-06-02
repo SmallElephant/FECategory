@@ -20,6 +20,10 @@
 		A880C5711CDA4A72005B012C /* NSDate+FEDateCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = A880C5701CDA4A72005B012C /* NSDate+FEDateCompare.m */; };
 		A8A1C4651CDB4FD800A42C59 /* FEAssertionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1C4641CDB4FD800A42C59 /* FEAssertionHandler.m */; };
 		A8A1C4661CDB4FD800A42C59 /* FEAssertionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A1C4641CDB4FD800A42C59 /* FEAssertionHandler.m */; };
+		A8CEF2EE1D002207000E47FD /* FESearchBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8CEF2ED1D002207000E47FD /* FESearchBarController.m */; };
+		A8CEF2EF1D002207000E47FD /* FESearchBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8CEF2ED1D002207000E47FD /* FESearchBarController.m */; };
+		A8CEF2F21D002418000E47FD /* UISearchBar+FESearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A8CEF2F11D002418000E47FD /* UISearchBar+FESearchBar.m */; };
+		A8CEF2F31D002418000E47FD /* UISearchBar+FESearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A8CEF2F11D002418000E47FD /* UISearchBar+FESearchBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,10 @@
 		A880C5701CDA4A72005B012C /* NSDate+FEDateCompare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+FEDateCompare.m"; sourceTree = "<group>"; };
 		A8A1C4631CDB4FD800A42C59 /* FEAssertionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FEAssertionHandler.h; sourceTree = "<group>"; };
 		A8A1C4641CDB4FD800A42C59 /* FEAssertionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FEAssertionHandler.m; sourceTree = "<group>"; };
+		A8CEF2EC1D002207000E47FD /* FESearchBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FESearchBarController.h; sourceTree = "<group>"; };
+		A8CEF2ED1D002207000E47FD /* FESearchBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FESearchBarController.m; sourceTree = "<group>"; };
+		A8CEF2F01D002418000E47FD /* UISearchBar+FESearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+FESearchBar.h"; sourceTree = "<group>"; };
+		A8CEF2F11D002418000E47FD /* UISearchBar+FESearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+FESearchBar.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,7 @@
 		A880C5371CDA49E1005B012C /* FECategory */ = {
 			isa = PBXGroup;
 			children = (
+				A8CEF2EB1D0021C6000E47FD /* ViewControllers */,
 				A8A1C4621CDB4F1200A42C59 /* Util */,
 				A880C53B1CDA49E1005B012C /* AppDelegate.h */,
 				A880C53C1CDA49E1005B012C /* AppDelegate.m */,
@@ -160,6 +169,8 @@
 				A880C5701CDA4A72005B012C /* NSDate+FEDateCompare.m */,
 				A862F3B61CDCFC47004B5C52 /* UITextField+FEPlaceHolder.h */,
 				A862F3B71CDCFC47004B5C52 /* UITextField+FEPlaceHolder.m */,
+				A8CEF2F01D002418000E47FD /* UISearchBar+FESearchBar.h */,
+				A8CEF2F11D002418000E47FD /* UISearchBar+FESearchBar.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -171,6 +182,15 @@
 				A8A1C4641CDB4FD800A42C59 /* FEAssertionHandler.m */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		A8CEF2EB1D0021C6000E47FD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A8CEF2EC1D002207000E47FD /* FESearchBarController.h */,
+				A8CEF2ED1D002207000E47FD /* FESearchBarController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,11 +323,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8CEF2EE1D002207000E47FD /* FESearchBarController.m in Sources */,
 				A8A1C4651CDB4FD800A42C59 /* FEAssertionHandler.m in Sources */,
 				A880C5401CDA49E1005B012C /* MainViewController.m in Sources */,
 				A862F3B81CDCFC47004B5C52 /* UITextField+FEPlaceHolder.m in Sources */,
 				A880C53D1CDA49E1005B012C /* AppDelegate.m in Sources */,
 				A880C53A1CDA49E1005B012C /* main.m in Sources */,
+				A8CEF2F21D002418000E47FD /* UISearchBar+FESearchBar.m in Sources */,
 				A880C5711CDA4A72005B012C /* NSDate+FEDateCompare.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,9 +338,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8CEF2EF1D002207000E47FD /* FESearchBarController.m in Sources */,
 				A8A1C4661CDB4FD800A42C59 /* FEAssertionHandler.m in Sources */,
 				A880C5531CDA49E1005B012C /* FECategoryTests.m in Sources */,
 				A862F3B91CDCFC47004B5C52 /* UITextField+FEPlaceHolder.m in Sources */,
+				A8CEF2F31D002418000E47FD /* UISearchBar+FESearchBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +477,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_NS_ASSERTIONS = YES;
 				INFOPLIST_FILE = FECategory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FlyElephant.FECategory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -464,6 +489,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FECategory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FlyElephant.FECategory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
